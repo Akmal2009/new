@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.asos{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 109px 1fr;
+    overflow: hidden;
+}
+.indi{
+    width: 39px;
+    margin-top: 35px;
+    display: flex;  
+}
+.inn{
+    width: 109px;
+    padding: 20px;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+}
+.see{
+    display: none;
+}
+.kn2{
+    display: none;
+}
+.icon{
+    color: white;
+    margin-left: 35px;
+    margin-top: 27px;
+}
+.sam_tittle{
+   max-width: 486px; 
+}
+.watch_now{
+    padding-bottom: 107px;
+}
+.sam-away{
+    background-color: aqua;
+    padding-left: 46px;
+    background-image: url("./img/fallback-img.png");
+    background-size: cover;
+    background-position: center;
+}
+.sam-text{
+    font-size: 80px;
+    color: white;
+    padding-top: 26px;
+}
+.sam-data{
+    font-size: 12px;
+    padding-top: 4px;
+    padding-bottom: 40px;
+    color: white;
+}
+.sam-p1{
+    font-size: 15px;
+    color: white;
+    width: 386px;
+    margin-top: 20px;
+}
+.sam-p2{
+    font-size: 12px;
+    width: 278px;
+    margin-top: 24px;
+    color: white;
+    margin-bottom: 49px;
+}
+.watch{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; 
+  padding: 0 10px;
+  border: 2px solid rgb(226, 13, 13);
+  border-radius: 40px;
+  color: red;
+  height: 44px;
+  width: max-content;
+  box-sizing: border-box;
+}
+
+.films{
+    padding: 81px 49px;
+    background-color: rgba(0, 0, 0, 0.748);
+}
+.films-text{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.films-text2{
+     margin-top: 81px;
+     margin-bottom: 30px;
+     font-size: 20px;
+}
+.inn{
+    
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.912);
+}
+.img{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: repeat(2, auto);
+     gap: 18.5px;
+}
+.end{
+    padding-left: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(9, 4, 4);
+    color: white;
+}
+.endd{
+    width: 517px;
+}
+.end-h3{
+    font-size: 40px;
+    margin-bottom: 22px;
+}
+.end-text{
+    margin-bottom: 46px;
+    font-size: 15px;
+}
+.form{
+}
+.end-img{
+    width: 500px;
+    height: auto;
+}
+.input{
+    border: 0;
+    border-bottom: 1px solid rgb(241, 239, 239);
+    outline: 0;     
+    background-color: rgb(0, 0, 0);
+}
+.button{
+    border-radius: 32px;
+}
+.kn3{
+display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .asos{
+        display: grid;
+        grid-template-columns: 64px 1fr;
+    }
+    .inn{
+        
+    }
+   .sam-away{
+    padding-left: 33px; 
+   }
+   .sam-text{
+    font-size: 50px;
+   }
+   .sam-data{
+    font-size: 10px;
+   }
+   .sam-p1{
+    font-size: 11px;
+    width: 283px;    
+   }
+   .sam-p2{
+    font-size: 10px;
+    width: 231px;
+   }
+   .icon{
+    margin-top: 30px;
+   }
+   .img{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: repeat(3, auto);
+     gap: 11px;
+   }
+   .end-img{
+    margin-right: 0;
+   }
+   .end-h3{
+    font-size: 30px;
+   }
+   .end-text{
+    font-size: 11px;
+    width: 331px;
+   }
+}
+
+@media screen and (max-width: 376px){
+    .asos{
+        display: block;
+        overflow: hidden;
+    }
+    .kn1{
+        display: none;
+    }
+    .kn2{
+        display: block;
+        background-color: black;
+        padding-left: 26px;
+    }
+    .img{
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(4, auto);
+     gap: 11px;
+    }
+    .inn{
+        display: none;
+    }
+    .indi{
+        display: none;
+    }
+    .see{
+        display: block;
+        padding: 20px 26px;
+    }
+    .sam-away{
+        width: 375px;
+        height: 243px;
+    }
+    .sam-text{
+        font-size: 40px;
+    }
+    .kn3{
+        display: block;
+        background-color: black;
+    display: flex;
+     justify-content: center;
+    align-items: center;     
+     gap: 10px;
+     padding-bottom: 20px;
+    }
+    .endd{
+       background-image: url(./img/gif-cinema.png);
+        background-size: cover;
+     }
+     .form{
+        background-color: none;
+     }
+    .end-img{
+        display: none;
+    }
+    .input{
+    border: 0;  
+    outline: 0;     
+    }
+}

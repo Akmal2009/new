@@ -21,7 +21,7 @@ img {
 }
 .inn{
     width: 109px;
-    padding: 20px;
+    padding-top: 20px;
     display: flex;  
     flex-direction: column;
     align-items: center;
@@ -34,8 +34,6 @@ img {
 }
 .icon{
     color: white;
-    margin-left: 35px;
-    margin-top: 27px;
 }
 .sam_tittle{
    max-width: 486px; 
@@ -150,7 +148,15 @@ img {
 display: none;
 }
 
-
+@media screen and (max-width: 1100px){
+    .sam-text{
+        font-size: 50px;
+    }
+    .sam-p1{
+        font-size: 13px;
+        width: 300px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .asos{
@@ -158,7 +164,7 @@ display: none;
         grid-template-columns: 64px 1fr;
     }
     .inn{
-        
+        width: 64px;
     }
    .sam-away{
     padding-left: 33px; 
@@ -198,7 +204,7 @@ display: none;
    }
 }
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 375px){
     .asos{
         display: block;
         overflow: hidden;
@@ -226,6 +232,7 @@ display: none;
     .see{
         display: block;
         padding: 20px 26px;
+        width: max-content;
     }
     .sam-away{
         width: 375px;
